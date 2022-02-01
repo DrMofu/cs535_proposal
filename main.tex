@@ -75,12 +75,12 @@ In the previous research, \cite{DBLP:journals/corr/abs-2006-15955} proposes a st
 However, such a network directly computes each task separately and combine them to a joint-encoding which ignores the connections between multimodel. Therefore, we are going to build a model which combines Graph Convolutional Network\cite{DBLP:journals/corr/KipfW16} and Transformers encoding.
 
 \subsection{Model}
-This network is consist of two parts, the first module is goint to extract feature using Transformer or Swin transformer\cite{DBLP:journals/corr/abs-2103-14030}. The second module will use the first module's output as input as a input of following Graph Convolutional Network. Also we will try to add Dynamic Fusion Graph\cite{bagher-zadeh-etal-2018-multimodal} structure to combine the multimodel feature.
+This network is consist of two parts, the first module is going to extract feature using Transformer or Swin transformer\cite{DBLP:journals/corr/abs-2103-14030}. The second module will use the first module's output as an input of the following Graph Convolutional Network. Moreover, we will try to add Dynamic Fusion Graph\cite{bagher-zadeh-etal-2018-multimodal} structure to combine the multimodel feature.
 
 \subsection{Evaluation Criteria}
 Accuracy and F1 scores will be utilized to measure results on the private test-fold for 7-class sentiment problem and for each emotion.
 \section{Team member contributions}
-Wanrong Zheng will implement the swin transformer structure instead of the original transformer backbone. Xinwei Du will add Graph Convolutional Network to baseline. Haosheng Wang will add Dynamic Fusion Graph to our network.
+Wanrong Zheng will implement the swin transformer structure instead of the original transformer as backbone. Xinwei Du will add Graph Convolutional Network to the baseline. Haosheng Wang will add Dynamic Fusion Graph to our network.
 
 
 % include your own bib file like this:
